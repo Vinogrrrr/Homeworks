@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+</head>
+
+<body>
+    <form id="registr" action="#" method="POST">
+        <fieldset>
+            <legend>Регистраци</legend>
+            <div>
+                <input type="name" placeholder="Имя пользователя" name="login" required>
+            </div>
+            <div>
+                <input type="email" placeholder="Введите email" name="login" required>
+            </div>
+            <div>
+                <input type="password" placeholder="Введите пароль" name="password" required>
+            </div>
+        </fieldset>
+
+        <div>
+            <label>
+                Соглашение с правилами <input type="checkbox" name="ok" value="yes" required>
+            </label>
+        </div>
+        <div>
+            <label>
+                Получать новости <input checked type="checkbox" name="news" value="yes">
+            </label>
+        </div>
+    </form>
+    <form id="log" action="#"></form>
+    <div>
+        <button form="registr" type="submit">Зарегистрироваться</button>
+        <button form="log" type="submit">Уже есть аккаунт</button>
+    </div>
+</body>
+
+</html>
