@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+a {
+  text-decoration: none;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.container {
+    max-width: 1200px;
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+.header {
+    background-color: rgb(165, 163, 177);
+    width: 100%;
+
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    min-width: 150px;
+    max-width: 150px;
+  }
+
+  #logo {
+    display: block;
+  }
+
+  #logo img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .nav {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  .menu {
+    text-align: center;
+  }
+
+  #index {
+    /* color: #3E2723; */
+    margin: 0;
+    display: grid;
+    grid-template-areas:
+        "left cars right"
+        "left news right"
+        "footer footer footer";
+
+    grid-template-columns: 1fr minmax(60%, 80%) 1fr;
+    grid-template-rows: auto auto 100px;
+}
+
+#left-aside {grid-area: left; }
+#right-aside {grid-area: right; }
+#cars {grid-area: cars; }
+#news {grid-area: news;}
+footer {grid-area: footer; }
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.cars {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5vh;
+  font-size: 1.5rem;
+}
+
+.cars h2 {
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+.models {
+  padding: 0 1rem 1rem 1rem;
+  font-size: 1em;
+}
+
+.news-block h2 {
+    text-align: center;
+}
+
+#news {
+  font-size: 1.5rem;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.news {
+  font-size: 1em;
+}
+
+.news p {
+  margin-bottom: 1rem;
+}
+
+.margin {
+  padding: 1rem;
+}
+
+.box {
+  padding: 1rem;
+  border-width: 3px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  background-color: rgba(61, 57, 57, 0.5);
+  text-align: center;
+  color: rgb(224, 206, 191);
+  line-height: 80px
+}
+
+#product {
+margin-top: 10vh;
+margin-left: 20vw;
+margin-right: 20vw;
+}
+
+#product .title {
+  margin-bottom: 5vh;
+  text-align: center;
+  color: rgb(238, 134, 50);
+  font-size: 2rem;
+}
+
+#product p {
+  font-size: 2rem;
+  text-align: justify;
+  margin-bottom: 5vh;
+}
+
+.radius {
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.table {
+  margin-top: 7vh;
+  margin-bottom: 5vh;
+  font-size: 1.3rem;
+  /* margin-left: 10vw;
+  margin-right: 10vw; */
+}
+
+table {
+  width: auto;
+}
+
+td {
+  border-bottom: 3px dotted black;
+}
+
+.spec {
+  font-size: 1.5rem;
+  color: rgb(238, 134, 50);
+}
+
+.fst {
+  text-align: right;
+} 
+
+.credit {
+  margin: 0;
+  display: grid;
+  grid-template-areas:
+      "laside registr raside"
+      "foot foot foot";
+
+  grid-template-columns: 1fr minmax(70%, 80%) 1fr;
+  grid-template-rows: auto 100px;
+}
+
+.left-aside-credit {grid-area: laside; }
+.right-aside-credit {grid-area: raside; }
+#registr {grid-area: registr; }
+.footer-credit {grid-area: foot; }
+
+#credit {
+    background-image: url(../img/backgraund.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+}
+
+#credit::before {
+  content: "";
+  position: absolute;
+  /* bottom: 20vh; */
+  width: 100%;
+  height: 100%;
+  /* top: 0;
+  left: 0; */
+  background-position: 50% 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: -1;
+}
+
+form {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  text-align: center;
+  background-color: rgba(214, 118, 118, 0.7);
+}
+
+legend {
+  text-align: left;
+  font-size: 2rem;
+}
+
+form div {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+input {
+  font-size: 1.5rem;
+}
+
+.check {
+  width: 20px;
+  height: 20px;
+}
+
+select {
+  font-size: 1.5rem;
+}
+
+.button {
+  margin-bottom: 5vh
+}

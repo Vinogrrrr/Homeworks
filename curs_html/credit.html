@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flex-grid.css">
+    <title>Покупка в кредит</title>
+</head>
+
+<body id="credit">
+    <header class="header">
+
+        <div class="container">
+
+            <div class="header-container flex-row">
+                <div class="logo col-lg-2 col-xs-12 col-sm-12 col-md-2">
+                    <a id="logo" href="index.html"><img src="img/Lada_Logo.jpeg"></a>
+                </div>
+
+                <nav class="nav flex-row col-lg-9 col-xs-12 col-sm-12 col-md-9">
+                    <div class="col-lg-4 col-xs-12 col-sm-12 col-md-4 menu"><a href="#">Модельный
+                            ряд</a></div>
+                    <div class="col-lg-4 col-xs-12 col-sm-12 col-md-4 menu"><a href="credit.html"
+                            class="border-button">Покупка в
+                            кредит</a></div>
+                    <div class="col-lg-4 col-xs-12 col-sm-12 col-md-4 menu"><a href="#" class="border-button">О
+                            нас</a></div>
+
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="credit">
+        <aside class="left-aside-credit"></aside>
+        <div>
+            <form id="registr" action="#" method="POST">
+                <fieldset>
+                    <legend>Подача заявки на кредит</legend>
+                    <div>
+                        <input type="name" placeholder="Ф.И.О" name="login" required>
+                    </div>
+                    <div>
+                        <input type="number" name="date" value="__.__.____" placeholder="Дата рождения" required>
+                    </div>
+                    <div>
+                        <select id="genre" name="genre">
+                            <option value="genre1">Lada Granta седан</option>
+                            <option value="genre2">Lada Vesta седан</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input id="number" type="tel" name="number"
+                            pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" value="+7(___)___-__-__"
+                            placeholder="Телефон">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="E-mail" name="login" required>
+                    </div>
+
+                    <div>
+                        <label>
+                            Соглашение на обработку данных <input class="check" type="checkbox" name="ok" value="yes"
+                                required>
+                        </label>
+                    </div>
+                </fieldset>
+                <div>
+                    <input class="button" form="registr" type="submit" value="Войти">
+                </div>
+            </form>
+        </div>
+        <aside class="right-aside-credit"></aside>
+        <footer class="footer-credit">Lada 2021</footer>
+    </div>
+
+</body>
+
+</html>

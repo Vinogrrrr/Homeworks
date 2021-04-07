@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background: #FF4E00;
+    display: flex;
+}
+
+/* header nav a {
+    display: inline-block;
+} */
+
+header {
+    height: 10vh;
+}
+
+header div a {
+    display: inline-block;
+}
+
+main {
+    /* color: #3E2723; */
+    margin: 0;
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "left cars right"
+        "left news right"
+        "footer footer footer";
+
+    grid-template-columns: 1fr minmax(60%, 80%) 1fr;
+    grid-template-rows: 100px auto auto 100px;
+}
+
+header {grid-area: header; }
+#left-aside {grid-area: left; }
+#right-aside {grid-area: right; }
+#cars {grid-area: car; }
+#news {grid-area: news;}
+footer {grid-area: footer; }
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
