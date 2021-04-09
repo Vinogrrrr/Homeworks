@@ -34,11 +34,8 @@ a {
     max-width: 150px;
   }
 
-  #logo {
-    display: block;
-  }
-
   #logo img {
+    display: block;
     width: 100%;
     height: 100%;
   }
@@ -53,7 +50,6 @@ a {
   }
 
   #index {
-    /* color: #3E2723; */
     margin: 0;
     display: grid;
     grid-template-areas:
@@ -137,6 +133,7 @@ margin-left: 20vw;
 margin-right: 20vw;
 }
 
+
 #product .title {
   margin-bottom: 5vh;
   text-align: center;
@@ -167,8 +164,23 @@ table {
   width: auto;
 }
 
-td {
+
+.char {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  display: none;
+}
+
+.border {
   border-bottom: 3px dotted black;
+}
+
+.tab-r {
+  list-style-type: none;
+}
+
+.engen {
+  border-bottom: none;
 }
 
 .spec {
@@ -187,7 +199,7 @@ td {
       "laside registr raside"
       "foot foot foot";
 
-  grid-template-columns: 1fr minmax(70%, 80%) 1fr;
+  grid-template-columns: 1fr minmax(80%, 90%) 1fr;
   grid-template-rows: auto 100px;
 }
 
@@ -197,6 +209,7 @@ td {
 .footer-credit {grid-area: foot; }
 
 #credit {
+    position: relative;
     background-image: url(../img/backgraund.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -248,4 +261,38 @@ select {
 
 .button {
   margin-bottom: 5vh
+}
+
+@media (min-width: 540px) and (max-width: 767px) {
+  #product {
+    margin: 0;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    }
+  
+  .table {
+    display: none;
+  }
+ 
+  .char {
+    display: block;
+  }
+}
+
+
+
+@media (max-width: 539px) {
+  #product {
+    margin: 0;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    }
+
+    .table {
+      display: none;
+    }
+   
+    .char {
+      display: block;
+    }
 }
